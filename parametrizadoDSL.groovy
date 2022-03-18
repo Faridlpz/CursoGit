@@ -5,9 +5,6 @@ job('DSL_2_job') {
      choiceParam('OPTION', ['option 1 (default)', 'option 2', 'option 3'])
    
  }  
-   triggers {
-        githubPush()
-    }
   scm {
     git('https://github.com/Faridlpz/CursoGit.git','main') { node -> 
     
