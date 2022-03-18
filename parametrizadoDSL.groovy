@@ -4,7 +4,10 @@ job('DSL_2_job') {
      booleanParam('FLAG', true)
      choiceParam('OPTION', ['option 1 (default)', 'option 2', 'option 3'])
    
- }  
+ }   
+  triggers {
+        githubPush()
+    }
   scm {
     git('https://github.com/Faridlpz/CursoGit.git','main') { node -> 
     
