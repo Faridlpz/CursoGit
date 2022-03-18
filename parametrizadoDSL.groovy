@@ -16,7 +16,7 @@ job('DSL_2_job') {
     }
   }
   steps{
-  	shell("echo 'Hello wordl'")
+  	shell("echo 'Hello worlds'")
   	
   }
   
